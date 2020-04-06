@@ -48,3 +48,68 @@
     <section class="stories-container"></section>
   </main>
   ```
+
+2. Add topbar elements:
+
+  There are multiple ways to lay this out. I'll use flexbox.
+  
+  ```
+  .topbar-content {
+    width: 915px;
+    height: 100%;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  <div class="topbar-content">
+    
+  </div>
+  ```
+
+  And the rest of the code:
+  
+  ```
+  .searchbox {
+    background-color: #fafafa;
+    border: 1px solid #dbdbdb;
+    padding: 3px 10px;
+    height: 20px;
+    border-radius: 5px;
+  }
+
+  .icons-box > img {
+    cursor: pointer;
+    width: 22px;
+    height: 22px;
+  }
+
+  .icons-box > img:not(:last-child) {
+    margin-right: 22px;
+  }
+
+  .profile-icon {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+  }
+
+  .profile-icon.sm {
+    width: 22px;
+    height: 22px;
+  }
+  ```
+
+  ```
+  <div class="topbar-content">
+  <img src="icons/iglogo.png" />
+  <input placeholder="Search..." class="searchbox" type="text" />
+  <div class="icons-box">
+    <img src="icons/home.svg" />
+    <img src="icons/paperplane.svg" />
+    <img src="icons/compass.svg" />
+    <img src="icons/heart.svg" />
+    <img class="profile-icon sm" src="images/jvall.jpg" />
+  </div>
+  ```

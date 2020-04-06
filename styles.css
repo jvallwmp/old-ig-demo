@@ -21,7 +21,46 @@ body {
 .topbar {
   grid-column: 1 / span 3;
   background-color: #fff;
-  border-bottom: 1px solid rgb(219, 219, 219);
+  border-bottom: 1px solid #dbdbdb;
+}
+
+.topbar-content {
+  width: 915px;
+  height: 100%;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.searchbox {
+  background-color: #fafafa;
+  border: 1px solid #dbdbdb;
+  padding: 3px 10px;
+  height: 20px;
+  border-radius: 5px;
+}
+
+.icons-box > img {
+  cursor: pointer;
+  width: 22px;
+  height: 22px;
+}
+
+.icons-box > img:not(:last-child) {
+  margin-right: 22px;
+}
+
+.profile-icon {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+.profile-icon.sm {
+  width: 22px;
+  height: 22px;
 }
 
 .posts-container {
