@@ -6,4 +6,28 @@ html, body {
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+
+  background-color: #fafafa;
+}
+
+.page-shell {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 615px minmax(300px, 1fr);
+  grid-template-rows: 56px 1fr;
+}
+
+.topbar {
+  grid-column: 1 / span 3;
+  background-color: #fff;
+  border-bottom: 1px solid rgb(219, 219, 219);
+}
+
+.posts-container {
+  grid-column-start: 2;
+}
+
+.stories-container {
+  grid-column-start: 3;
 }
