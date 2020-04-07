@@ -13,7 +13,7 @@
       width: 100%;
       height: 100%;
       display: grid;
-      grid-template-columns: 1fr auto max-content;
+      grid-template-columns: 1fr 615px 300px 1fr;
       grid-template-rows: 56px 1fr;
     }
   ```
@@ -24,7 +24,7 @@
 
   ```
   .topbar {
-    grid-column: 1 / span 3;
+    grid-column: 1 / span 4;
     background-color: #fff;
     border-bottom: 1px solid rgb(219, 219, 219);
   }
