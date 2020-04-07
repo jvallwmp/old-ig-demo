@@ -196,3 +196,81 @@
   ```
 
   This is to accommodate various profile icon sizes on IG.
+
+  4.  Write image, comment, and caption code:
+
+  ```
+  .post-image {
+    width: 615px;
+    height: 460px;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+
+  .post-content {
+    padding: 0 15px;
+  }
+
+  .post-content-line {
+    margin-bottom: 3px;
+    line-height: 1.4em;
+  }
+
+  .action-icons {
+    width: auto;
+  }
+
+  .action-icons > img {
+    margin-bottom: 10px;
+    margin-right: 10px;
+    width: 22px;
+    height: 22px;
+  }
+
+  .bookmark-icon {
+    float: right;
+  }
+
+  .post-caption {
+    font-size: 0.9em;
+  }
+
+  .post-caption-name {
+    font-weight: bold;
+  }
+
+  .post-timestamp {
+    font-size: 0.7em;
+    text-transform: uppercase;
+    color: #a3a3a3;
+    margin-bottom: 10px;
+  }
+
+  .write-comment-area {
+    width: 100%;
+    background-color: #fafafa;
+    border: none;
+    border-top: 1px solid #dbdbdb;
+    padding: 20px 0;
+    resize: none;
+    font-family: inherit;
+  }
+  ```
+
+  And corresponding DOM elements:
+
+  ```
+  <img class="post-image" src="images/food1.jpg" />
+  <div class="post-content">
+    <div class="action-icons post-content-line">
+      <img src="icons/heart.svg" />
+      <img src="icons/speakbubble.svg" />
+      <img src="icons/paperplane.svg" />
+      <img class="bookmark-icon" src="icons/bookmark.svg" />
+    </div>
+    <p class="post-account-name post-content-line">100 likes</p>
+    <p class="post-content-line post-caption"><span class="post-caption-name">cmaier</span> red bbq pork with rice and hardboiled egg</p>  
+    <p class="post-timestamp post-content-line">14 hours ago</p>
+    <textarea placeholder="Write a comment..." class="write-comment-area"></textarea>
+  </div>
+  ```
