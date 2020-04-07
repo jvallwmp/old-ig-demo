@@ -113,3 +113,86 @@
     <img class="profile-icon sm" src="images/jvall.jpg" />
   </div>
   ```
+
+  3. Make post shell, header:
+  
+  ```
+    <section class="posts-container">
+      <article class="post">
+        <header class="post-header">
+          <div class="post-account">
+            <img class="profile-icon" src="images/cmaier.jpg" />
+            <div>
+              <p class="post-account-name">cmaier</p>
+              <p class="post-account-location">Taipei Cafe</p>  
+            </div>
+          </div>
+          <img src="icons/ellipsis.svg">
+        </header>
+      </article>
+    </section>
+  ```
+
+  Introducing p tag, make margins 0: 
+
+  ```
+  p {
+    margin: 0;
+  }
+  ```
+
+  ```
+  .post {
+    width: 615px;
+    border: 1px solid #dbdbdb;
+    border-radius: 4px;
+    margin-top: 20px;
+  }
+
+  .post-header {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .post-account {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .post-account-name {
+    font-weight: bold;
+    font-size: 0.9em;
+  }
+
+  .post-account-location {
+    font-size: 0.8em;
+  }
+
+  .post-account > .profile-icon {
+    margin-right: 10px;
+  }
+
+  .post-header > img {
+    cursor: pointer;
+  }
+  ```
+
+  Make some adjustments to the profile icon classes:
+
+  ```
+  .profile-icon {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #dbdbdb;
+  }
+
+  .profile-icon.lg {
+    width: 50px;
+    height: 50px;
+  }
+  ```
+
+  This is to accommodate various profile icon sizes on IG.

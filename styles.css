@@ -10,6 +10,10 @@ body {
   background-color: #fafafa;
 }
 
+p {
+  margin: 0;
+}
+
 .page-shell {
   width: 100%;
   height: 100%;
@@ -54,6 +58,12 @@ body {
 
 .profile-icon {
   border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #dbdbdb;
+}
+
+.profile-icon.lg {
   width: 50px;
   height: 50px;
 }
@@ -69,4 +79,40 @@ body {
 
 .stories-container {
   grid-column-start: 3;
+}
+
+.post {
+  width: 615px;
+  border: 1px solid #dbdbdb;
+  border-radius: 4px;
+  margin-top: 20px;
+}
+
+.post-header {
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.post-account {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.post-account-name {
+  font-weight: bold;
+  font-size: 0.9em;
+}
+
+.post-account-location {
+  font-size: 0.8em;
+}
+
+.post-account > .profile-icon {
+  margin-right: 10px;
+}
+
+.post-header > img {
+  cursor: pointer;
 }
