@@ -274,3 +274,42 @@
     <textarea placeholder="Write a comment..." class="write-comment-area"></textarea>
   </div>
   ```
+
+  5. Start work on sidebar, implement logged in user:
+
+    ```
+    <section class="stories-container">
+      <div class="logged-in-user">
+        <img class="profile-icon lg" src="images/jvall.jpg" />
+        <div>
+          <p class="post-account-name">jvall</p>
+          <p class="post-account-location">John Vall</p>  
+        </div>
+      </div>
+    </section>
+    ```
+    ```
+    .logged-in-user {
+      display: flex;
+      align-items: center;
+      margin-top: 20px;
+    }
+
+    .logged-in-user > .profile-icon {
+      margin-right: 10px;
+    }
+
+    .logged-in-username {
+      margin-right: 20px;
+    }
+    ```
+
+    Modify spacing and margin to accomodate new column:
+
+    ```
+    grid-template-columns: 1fr 635px 300px 1fr;
+    .posts-container {
+      grid-column-start: 2;
+      margin-right: 20px;
+    }
+    ```
