@@ -389,3 +389,19 @@
       padding: 1px;
   }
   ```
+
+  7. Add scrolling support:
+
+  ```
+    .post {
+      width: 613px;
+    }
+
+    .posts-container {
+      overflow-y: auto;
+    }
+
+    .stories {
+      overflow-y: auto;
+    }
+  ```
