@@ -157,8 +157,6 @@
 
   .post-account {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
   }
 
   .post-account-name {
@@ -197,7 +195,7 @@
 
   This is to accommodate various profile icon sizes on IG.
 
-  4.  Write image, comment, and caption code:
+  1.  Write image, comment, and caption code:
 
   ```
   .post-image {
@@ -313,3 +311,81 @@
       margin-right: 20px;
     }
     ```
+
+  6. Implement stories section
+
+  Add stories header:
+
+  ```
+    <div class="stories">
+      <div class="stories-title">
+        <span class="stories-text">Stories</span>
+        <span class="stories-watch-all">Watch All</span>
+      </div>
+    </div>
+  ```
+
+  Header base styling:
+  ```
+    .stories {
+      border: 1px solid #dbdbdb;
+      border-radius: 4px;
+      padding: 10px 16px 0 16px;
+      height: 230px;
+    }
+
+    .stories-title {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      margin-bottom: 25px;
+    }
+
+    .stories-watch-all {
+      font-size: 0.8em;
+      font-weight: bold;
+    }
+
+    .stories-text {
+      color: #a3a3a3;
+      font-weight: bold;
+      font-size: 0.9em;
+    }
+  ```
+
+  Add specific stories DOM:
+  ```
+    <div class="post-account">
+      <img class="profile-icon new-story" src="images/ajliptak.jpg" />
+      <div>
+        <p class="post-account-name">ajliptak</p>
+        <p class="post-timestamp post-content-line">10 hours ago</p>
+      </div>
+    </div>
+  ```
+
+  Add new stories CSS:
+  ```
+    .profile-icon.new-story {
+      border: 2px solid #e74f58;
+    }
+  ```
+
+  Change logged in user padding: 
+  ```
+    margin: 20px 0;
+  ```
+
+  Remove post-account center styling:
+  ```
+  .post-account {
+    display: flex;
+  }
+  ```
+
+  Add padding to icon:
+  ```
+  .profile-icon {
+      padding: 1px;
+  }
+  ```
